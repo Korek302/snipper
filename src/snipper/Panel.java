@@ -65,7 +65,7 @@ public class Panel extends JPanel implements ActionListener, KeyListener
 		BufferedImage iconImage = new BufferedImage(1, 1, BufferedImage.TYPE_INT_RGB);
 		try
 		{
-			iconImage = ImageIO.read(new File("D:\\GitHub\\snipper\\icon2.bmp"));
+			iconImage = ImageIO.read(new File("icon2.bmp"));
 		} 
 		catch (IOException e) 
 		{
