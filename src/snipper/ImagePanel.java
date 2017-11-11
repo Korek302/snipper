@@ -179,7 +179,7 @@ class ImagePanel extends JPanel implements MouseListener, MouseMotionListener
 			Scanner in = null;
 			try 
 			{
-				in = new Scanner(new FileReader("index.txt"));
+				in = new Scanner(new FileReader("resources\\index.txt"));
 				
 				StringBuilder sb = new StringBuilder();
 				while(in.hasNext()) 
@@ -189,7 +189,7 @@ class ImagePanel extends JPanel implements MouseListener, MouseMotionListener
 				index = Integer.parseInt(sb.toString());
 				
 				ImageIO.write(img, "bmp", new File("D:\\Documents\\Snipper\\snip" + index + ".bmp"));
-				PrintWriter writer = new PrintWriter("index.txt");
+				PrintWriter writer = new PrintWriter("resources\\index.txt");
 				writer.println(index + 1);
 				writer.close();
 				System.out.println("Snip created successfully");
